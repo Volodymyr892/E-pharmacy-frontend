@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import CartPage from "../pages/CartPage/CartPage";
 import HomePage from "../pages/HomePage/HomePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
@@ -9,15 +10,16 @@ import ShearedLayout from "../pages/ShearedLayout/ShearedLayout"
 
 export default function App() {
   return (
-    <div>
-      <CartPage/>
-      <HomePage/>
-      <LoginPage/>
-      <MedicinePage/>
-      <MedicineStorePage/>
-      <ProductPage/>
-      <RegisterPage/>
-      <ShearedLayout/>
-    </div>
+    <Routes>
+      {/* <Route path="/" element={<ShearedLayout/>}> */}
+        <Route path="/home" element={<HomePage/>}/>
+        <Route path="/register" element={<RegisterPage/>}/>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/medicine-store" element={<MedicineStorePage/>}/>
+        <Route path="/medicine" element={<MedicinePage/>}/>
+        <Route path="/product" element={<ProductPage/>}/>
+        <Route path="/cart" element={<CartPage/>}/>
+      {/* </Route> */}
+    </Routes>
   )
 }
