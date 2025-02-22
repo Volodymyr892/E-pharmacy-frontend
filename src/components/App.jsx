@@ -1,17 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import CartPage from "../pages/CartPage/CartPage";
-import HomePage from "../pages/HomePage/HomePage";
-import LoginPage from "../pages/LoginPage/LoginPage";
-import MedicinePage from "../pages/MedicinePage/MedicinePage"
-import MedicineStorePage from "../pages/MedicineStorePage/MedicineStorePage"
-import ProductPage from "../pages/ProductPage/ProductPage"
-import RegisterPage from "../pages/RegisterPage/RegisterPage"
-import ShearedLayout from "../pages/ShearedLayout/ShearedLayout"
+import { lazy } from "react";
+
+const CartPage = lazy(() =>import('../pages/CartPage/CartPage'));
+const HomePage = lazy(()=> import('../pages/HomePage/HomePage'));
+const LoginPage = lazy(()=>import('../pages/LoginPage/LoginPage'));
+const MedicinePage = lazy(()=>import('../pages/MedicinePage/MedicinePage'));
+const MedicineStorePage = lazy(()=>import('../pages/MedicineStorePage/MedicineStorePage'));
+const ProductPage = lazy(()=>import('../pages/ProductPage/ProductPage'));
+const RegisterPage = lazy(()=>import('../pages/RegisterPage/RegisterPage'));
+const ShearedLayout = lazy(()=>import('../pages/ShearedLayout/ShearedLayout'));
 
 export default function App() {
   return (
     <Routes>
-      {/* <Route path="/" element={<ShearedLayout/>}> */}
+      <Route path="/" element={<ShearedLayout/>}>
         <Route path="/home" element={<HomePage/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
@@ -19,7 +21,7 @@ export default function App() {
         <Route path="/medicine" element={<MedicinePage/>}/>
         <Route path="/product" element={<ProductPage/>}/>
         <Route path="/cart" element={<CartPage/>}/>
-      {/* </Route> */}
+      </Route>
     </Routes>
   )
 }
