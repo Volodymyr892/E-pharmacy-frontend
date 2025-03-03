@@ -1,7 +1,12 @@
+import MainBanner from "../../components/MainBanner/MainBanner";
+import PromoBannersList from "../../components/PromoBannersList/PromoBannersList";
+import css from "./HomePage.module.css"
+
 export default function HomePage() {
   return (
-    <div>
-      <p>HomePage</p>
+    <div className={css.container}>
+      <MainBanner/>
+      <PromoBannersList/>
     </div>
   )
 }

@@ -1,0 +1,35 @@
+.container{
+    width: 375px;
+height: 812px;
+padding: 20px;
+background-color: #59b17a;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.titleContainer{
+    width: 331px;
+    height: 312px;
+    background-image: url('/public/homeBackround.svg'); /* шлях до картинки */
+    background-size: cover; /* Щоб зображення заповнювало весь блок */
+    background-position: center; /* Центрування зображення */
+    background-repeat: no-repeat;
+}
+.title{
+    margin: 20px 0 20px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 4px 85px 0 rgba(29, 30, 33, 0.3);
+}
+.description{
+    width: 156px;
+    margin: 0 0 0 179px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: #fff;
+}
