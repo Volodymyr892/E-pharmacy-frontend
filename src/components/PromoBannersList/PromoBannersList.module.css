@@ -1,9 +1,21 @@
 ul, ol {
-    list-style: none; /* Видаляє крапки, цифри */
+    list-style: none; 
     margin: 0;
     padding: 0;
 }
 li {
     margin: 0;
     padding: 0;
+}
+.container{
+    background: #f7f8fa;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.list{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }

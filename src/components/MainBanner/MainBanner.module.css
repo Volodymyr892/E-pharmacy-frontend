@@ -10,14 +10,13 @@ align-items: center;
 .titleContainer{
     width: 331px;
     height: 312px;
-    background-image: url('/public/homeBackround.svg'); /* шлях до картинки */
-    background-size: cover; /* Щоб зображення заповнювало весь блок */
-    background-position: center; /* Центрування зображення */
+    background-image: url('/public/homeBackround.svg'); 
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
 }
 .title{
     margin: 20px 0 20px;
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 50px;
     line-height: 1;
@@ -27,7 +26,6 @@ align-items: center;
 .description{
     width: 156px;
     margin: 0 0 0 179px;
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
     line-height: 133%;
