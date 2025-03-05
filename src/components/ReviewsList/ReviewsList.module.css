@@ -1,0 +1,21 @@
+.container{
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title{
+    margin: 0 0 14px 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.1;
+    text-align: center;
+    color: #1d1e21;
+}
+.description{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    color: #93939a;
+}

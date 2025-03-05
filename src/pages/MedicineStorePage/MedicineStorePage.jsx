@@ -1,7 +1,9 @@
+import MedicineStorePageList from "../../components/MedicineStorePageList/MedicineStorePageList";
+
 export default function MedicineStorePage() {
   return (
     <div>
-      <p>MedicineStorePage</p>
+      <MedicineStorePageList/>
     </div>
   )
 }
