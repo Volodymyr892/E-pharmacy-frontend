@@ -1,7 +1,10 @@
+import MedicineList from "../../components/MedicineList/MedicineList";
+import css from "./MedicinePage.module.css"
+
 export default function MedicinePage() {
   return (
-    <div>
-      <p>MedicinePage</p>
-    </div>
+    <main className={css.container}>
+      <MedicineList/>
+    </main>
   )
 }
