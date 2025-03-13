@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy } from "react";
+import Description from "./Description/Description";
+import Reviews from "./Reviews/Reviews";
 
 const CartPage = lazy(() =>import('../pages/CartPage/CartPage'));
 const HomePage = lazy(()=> import('../pages/HomePage/HomePage'));
@@ -19,7 +21,11 @@ export default function App() {
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/medicine-store" element={<MedicineStorePage/>}/>
         <Route path="/medicine" element={<MedicinePage/>}/>
-        <Route path="/product" element={<ProductPage/>}/>
+        <Route path="/product" element={<ProductPage/>}>
+          <Route index element={<Description/>}/>
+          <Route path="description" element={<Description/>}/>
+          <Route path="reviews" element={<Reviews/>}/>
+        </Route>
         <Route path="/cart" element={<CartPage/>}/>
       </Route>
     </Routes>
