@@ -1,7 +1,7 @@
 .container{
     border-radius: 27px;
 width: 335px;
-/* height: 783px; */
+
 padding: 20px;
 background-color: #fff;
 margin-top: 8px;
@@ -10,10 +10,8 @@ margin-top: 8px;
 
     border-radius: 40px;
 padding: 8px 25px;
-/* width: 102px; */
 height: 33px;
 background-color: #59b17a;
-/* font-family: var(--font-family); */
 font-weight: 500;
 font-size: 14px;
 letter-spacing: -0.05em;
@@ -23,10 +21,8 @@ color: #fff;
 .tabF{
     border-radius: 40px;
     padding: 8px 25px;
-    /* width: 120px; */
     height: 33px;
     background-color: rgba(89, 177, 122, 0.1);
-    /* font-family: var(--font-family); */
 font-weight: 500;
 font-size: 14px;
 letter-spacing: -0.05em;
