@@ -1,10 +1,11 @@
+import css from "./Login.module.css"
 export default function Login() {
     return(
         <div>
-            <h2>Your medication, delivered Say goodbye to all your healthcare worries with us</h2>
+            <h2 className={css.title}>Your medication, delivered Say goodbye to all<span className={css.span}> your healthcare worries</span> with us</h2>
             <div>
-                <button>Log in</button>
-                <p>Don't have an account?</p>
+                <button className={css.buttonLogin}>Log in</button>
+                <p className={css.question}>Don't have an account?</p>
             </div>
         </div>
     )
