@@ -1,8 +1,8 @@
 import Login from "../../components/Login/Login";
-
+import css from "./LoginPage.module.css"
 export default function LoginPage() {
   return (
-    <div>
+    <div className={css.container}>
       <Login/>
     </div>
   )
