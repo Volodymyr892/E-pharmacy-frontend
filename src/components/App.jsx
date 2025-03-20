@@ -16,6 +16,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<ShearedLayout/>}>
+        <Route index element={<HomePage/>}/>
         <Route path="/home" element={<HomePage/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>

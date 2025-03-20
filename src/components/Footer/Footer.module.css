@@ -1,0 +1,25 @@
+.container{
+    margin-top: 80px;
+    width: 375px;
+height: 334px;
+padding: 20px;
+background-color: #59b17a;
+}
+.descriptionText{
+    margin-top: 20px;
+    width: 261px;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.3;
+color: #f7f8fa;
+}
+.list{
+    margin-top: 40px;
+    display: flex;
+    gap: 32px;
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 129%;
+color: #f7f8fa;
+}
