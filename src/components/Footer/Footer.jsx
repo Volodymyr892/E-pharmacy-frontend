@@ -11,8 +11,17 @@ export default function Footer() {
                 <li>Medicine store</li>
                 <li>Medicine</li>
             </ul>
-            <hr />
-            <p>© E-Pharmacy 2023. All Rights Reserved Privacy Policy Terms & Conditions</p>
+            <hr className={css.line}/>
+            <ul className={css.listTwo}>
+                <li className={css.p}>© E-Pharmacy 2023. All Rights Reserved</li>
+                <hr className={css.lineTwo}/>
+                <li className={css.p}>Privacy Policy</li>
+                <hr className={css.lineTwo}/>
+                <li className={css.p}>Terms & Conditions</li>
+            </ul>
+            {/* <p className={css.p}>© E-Pharmacy 2023. All Rights Reserved</p>
+            <p className={css.p}>Privacy Policy </p>
+            <p className={css.p}>Terms & Conditions</p> */}
         </div>
     )
 }

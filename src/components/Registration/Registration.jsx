@@ -1,7 +1,7 @@
 import css from "./Registration.module.css"
 export default function Registration() {
     return (
-        <div>
+        <div className={css.container}>
             <h2 className={css.title}>Your medication, delivered Say goodbye to all<span className={css.span}> your healthcare</span> worries with us</h2>
             <div>
                 <form className={css.form}>

@@ -1,7 +1,7 @@
 import css from "./Login.module.css"
 export default function Login() {
     return(
-        <div>
+        <div className={css.container}>
             <h2 className={css.title}>Your medication, delivered Say goodbye to all<span className={css.span}> your healthcare worries</span> with us</h2>
             <div>
                 <from>

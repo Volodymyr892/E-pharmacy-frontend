@@ -2,4 +2,15 @@
     margin: 0 auto;
     max-width: 375px;
     padding: 0 20px;
+    position: relative;
+}
+.img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.imgQ{
+    position: absolute;
+    top: 50px;
+    right: 40px;
 }

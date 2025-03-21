@@ -3,3 +3,10 @@
     max-width: 375px;
     padding: 0 20px;
 }
+.title{
+font-weight: 600;
+font-size: 28px;
+line-height: 1.1;
+color: #1d1e21;
+margin: 64px 0 40px 0;
+}

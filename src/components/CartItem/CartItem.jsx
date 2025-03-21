@@ -29,7 +29,7 @@ export default function CartItem() {
                             </button>
                         </div>
                         <button className={css.buttonDelete}>
-                            Delete
+                        Remove
                         </button>
                    </div>
                 </div>
