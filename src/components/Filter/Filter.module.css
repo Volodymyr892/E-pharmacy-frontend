@@ -1,0 +1,60 @@
+.select{
+    border: 1px solid rgba(29, 30, 33, 0.1);
+border-radius: 60px;
+padding: 0 18px;
+width: 335px;
+height: 44px;
+background-color: #fff;
+}
+.button{
+    margin-top: 12px;
+    border-radius: 60px;
+padding: 13px 30px;
+width: 116px;
+height: 44px;
+background-color: #59b17a;
+/* font-family: var(--font-family); */
+font-weight: 500;
+font-size: 14px;
+line-height: 1.3;
+color: #fff;
+display: flex;
+gap: 8px;
+border: none;
+}
+.input{
+    background-color: transparent;
+    border: none;       /* Видаляє стандартну рамку */
+    padding: 0;         /* Видаляє внутрішні відступи */
+    margin: 0;          /* Видаляє зовнішні відступи */
+    outline: none;      /* Видаляє контур при фокусі */
+    font: inherit;      /* Використовує шрифти, задані для батьківського елемента */
+    color: inherit;     /* Використовує колір тексту батьківського елемента */
+    /* width: 100%; */
+}
+.input::placeholder{
+    /* font-family: var(--font-family); */
+font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+color: rgba(29, 30, 33, 0.4);
+}
+.buttonSearch{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.label{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(29, 30, 33, 0.1);
+border-radius: 60px;
+width: 335px;
+height: 44px;
+padding: 14px 18px;
+background-color: white;
+}
+.form{
+    margin-top: 40px;
+}
