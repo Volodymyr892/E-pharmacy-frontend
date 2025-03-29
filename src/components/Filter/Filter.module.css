@@ -24,17 +24,16 @@ border: none;
 }
 .input{
     background-color: transparent;
-    border: none;       /* Видаляє стандартну рамку */
-    padding: 0;         /* Видаляє внутрішні відступи */
-    margin: 0;          /* Видаляє зовнішні відступи */
-    outline: none;      /* Видаляє контур при фокусі */
-    font: inherit;      /* Використовує шрифти, задані для батьківського елемента */
-    color: inherit;     /* Використовує колір тексту батьківського елемента */
-    /* width: 100%; */
+    border: none;       
+    padding: 0;         
+    margin: 0;         
+    outline: none;      
+    font: inherit;     
+    color: inherit;    
+   
 }
 .input::placeholder{
-    /* font-family: var(--font-family); */
-font-weight: 400;
+    
 font-size: 14px;
 line-height: 1.5;
 color: rgba(29, 30, 33, 0.4);
