@@ -2,4 +2,16 @@
     background-color: #59b17a;
     padding: 25px 20px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonBurger{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    color: white;
 }
