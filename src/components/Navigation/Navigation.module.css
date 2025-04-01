@@ -12,6 +12,7 @@ height: 142px;
     gap: 2px;
 }
 .active{
+    text-align: center;
     font-family: var(--font-family);
 font-weight: 400;
 font-size: 14px;

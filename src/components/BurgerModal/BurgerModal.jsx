@@ -6,7 +6,7 @@ import LogoutBtn from "../LogoutBtn/LogoutBtn";
 import AuthNav from "../AuthNav/AuthNav";
 
 export default function BurgerModal({ isOpen, onClose }) {
-      const  [isLoggedIn] = useState(false);
+      const  [isLoggedIn] = useState(true);
     if (!isOpen) return null;
     return(
         <div className={css.container}>
