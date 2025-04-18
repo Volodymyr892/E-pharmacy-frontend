@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import Description from "./Description/Description";
 import Reviews from "./Reviews/Reviews";
 
@@ -18,6 +18,7 @@ const ShearedLayout = lazy(()=>import('../pages/ShearedLayout/ShearedLayout'));
 
 export default function App() {
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <Routes>
       <Route path="/" element={<ShearedLayout/>}>
         <Route index element={<HomePage/>}/>
@@ -36,5 +37,6 @@ export default function App() {
         <Route path="/cart" element={<PrivateRoute component={<CartPage/>} redirectTo={"/login"}/>}/>
       </Route>
     </Routes>
+    </Suspense>
   )
 }
