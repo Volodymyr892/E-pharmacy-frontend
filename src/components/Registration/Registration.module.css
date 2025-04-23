@@ -53,8 +53,8 @@ margin-bottom: 20px;
     margin-bottom: 20px;
 }
 .input:focus {
-    border: 1px solid #59b17a; /* Зелений бордер при фокусі */
-    box-shadow: 0 0 5px rgba(89, 177, 122, 0.5); /* Додає легке підсвічування */
+    border: 1px solid #59b17a; 
+    box-shadow: 0 0 5px rgba(89, 177, 122, 0.5);
 }
 .input::placeholder{
 font-weight: 400;

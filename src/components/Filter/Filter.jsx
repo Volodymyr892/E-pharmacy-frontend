@@ -96,10 +96,8 @@ export default function Filter() {
                 options={categoriesOptions}
                  placeholder="Product category"
                 isClearable
-                // className={css.reactSelect}
                 classNamePrefix="select"
                 styles={category}
-                        // onChange={(option) => handleFilterChange("category", option?.value || null)}
             />
             <div className={css.label}>
                 <input className={css.input} type="text" placeholder="Search medicine"/>

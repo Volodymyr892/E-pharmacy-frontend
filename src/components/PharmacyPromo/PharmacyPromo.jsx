@@ -22,17 +22,17 @@ export default function PharmacyPromo() {
       const scrollStep = () => {
         if (!isScrolling) return;
         if (scrollContainer) {
-          scrollAmount += 1; // швидкість прокрутки
+          scrollAmount += 1;
           scrollContainer.scrollLeft = scrollAmount;
   
           if (scrollAmount >= scrollContainer.scrollWidth / 2) {
-            scrollAmount = 0; // Повертаємось на початок для безперервного ефекту
+            scrollAmount = 0; 
             scrollContainer.scrollLeft = 0;
           }
         }
       };
   
-      const interval = setInterval(scrollStep, 30); // Чим менше число, тим швидше скрол
+      const interval = setInterval(scrollStep, 30); 
   
       return () => clearInterval(interval);
     }, []);
@@ -46,7 +46,6 @@ export default function PharmacyPromo() {
         </div>
         <div className={css.featuresWrapper} ref={scrollRef}>
       <div className={css.featuresContainer}>
-        {/* Дублюємо список для безперервного скролу */}
         {[...features, ...features].map((feature, index) => (
           <div key={index} className={css.featureItem}>
             {feature.icon}

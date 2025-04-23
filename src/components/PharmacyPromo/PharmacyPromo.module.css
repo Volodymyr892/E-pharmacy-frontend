@@ -12,7 +12,6 @@ background-color: #59b17a;
 }
 .title{
     margin: 20px 0 0 0;
-    /* font-family: var(--font-family); */
 font-weight: 600;
 font-size: 28px;
 line-height: 1.1;
@@ -21,7 +20,6 @@ color: #f1f1f1;
 }
 .description{
     margin: 20px 0 0 0;
-    /* font-family: var(--font-family); */
 font-weight: 400;
 font-size: 14px;
 line-height: 1.3;
@@ -35,7 +33,6 @@ border-radius: 60px;
 padding: 13px;
 width: 154px;
 height: 44px;
-/* font-family: var(--font-family); */
 font-weight: 500;
 font-size: 14px;
 line-height: 1.3;
@@ -47,7 +44,7 @@ background-color: #59b17a;
 }
 
 .featuresWrapper {
-    overflow-x: hidden; /* Ховає скролбар */
+    overflow-x: hidden;
     white-space: nowrap; 
     display: flex;
     scroll-behavior: smooth;
@@ -58,7 +55,6 @@ background-color: #59b17a;
     margin-top: 40px;
     display: flex;
     gap: 43px;
-    /* padding: 16px; */
   }
   
   .featureItem {
@@ -73,7 +69,6 @@ background-color: #59b17a;
   }
   .text{
     margin: 0;
-    /* font-family: var(--font-family); */
 font-weight: 600;
 font-size: 14px;
 line-height: 1.3;
