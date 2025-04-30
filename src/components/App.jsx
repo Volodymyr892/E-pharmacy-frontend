@@ -30,7 +30,7 @@ export default function App() {
         <Route path="/login" element={<RestrictedRoute component={<LoginPage/>} redirectTo={"/product"}/>}/>
 
         
-        <Route path="/product" element={<ProductPage/>}>
+        <Route path="/product/:id" element={<ProductPage/>}>
         {/* <Route path="/product" element={<PrivateRoute component={<ProductPage/>} redirectTo={"/login"}/>}> */}
           <Route index element={<Description/>}/>
           <Route path="description" element={<Description/>}/>

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchProducts } from "./operation";
+import { fetchProducts, productsId } from "./operation";
 
 const productsSlice = createSlice({
     name: "products",
@@ -7,6 +7,7 @@ const productsSlice = createSlice({
         products: {
             results: []
         },
+        product: {},
         error: null,
         isLoading: false,
     },
@@ -19,7 +20,20 @@ const productsSlice = createSlice({
         .addCase(fetchProducts.fulfilled, (state, action)=>{
             state.isLoading = false;
             state.products = action.payload.data.data; 
-            console.log("🚀 ~ .addCase ~  state.products:",  state.products)
+            // console.log("🚀 ~ .addCase ~  state.products:",  state.products)
+        })
+        .addCase(fetchProducts.rejected, (state, action) => {
+            state.isLoading = false;
+            state.error = action.error.message; 
+        })
+        .addCase(productsId.pending, (state)=>{
+            state.isLoading = true;
+            state.error = false;
+        })
+        .addCase(productsId.fulfilled, (state, action)=>{ 
+            state.isLoading = false;
+            state.product = action.payload.data;
+            console.log("🚀 ~ .addCase ~  state.product:",  state.product)
         })
     }
 })

@@ -1,16 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import css from "./Product.module.css"
+import { useParams } from "react-router-dom";
+import { useDispatch, useSelector} from "react-redux";
+import { productsId } from "../../redux/products/operation";
+import { productSelectors } from "../../redux/products/selectors";
 
 export default function Product() {
+    const product = useSelector(productSelectors);
+    const { id } = useParams();
+    const dispatch = useDispatch();
+  
+    useEffect(() => {
+      dispatch(productsId({ id }));
+    }, [dispatch, id]);
     const [count, setCount] = useState(1);
 
     const increase = () => setCount(count + 1);
-  const decrease = () => setCount((prev) => Math.max(prev - 1, 0));
+    const decrease = () => setCount((prev) => Math.max(prev - 1, 0));
     return(
         <div>
-            <div className={css.containerFoto}>
-            </div>
+            <img className={css.img} src={product.photo} alt="" />
             <div className={css.containerAdd}>
                 <ul className={css.list}>
                     <li className={css.item}>

@@ -17,3 +17,16 @@ export const fetchProducts = createAsyncThunk(
         }
     }
 )
+
+export const productsId = createAsyncThunk(
+    "products/productsId",
+    async({id}, thunkApi)=>{
+        try {
+            const response = await axios.get(`api/products/${id}`)
+            console.log("🚀 ~ async ~ response:", response.data)
+            return response.data;
+        } catch (error) {
+            return thunkApi.rejectWithValue(error.message);
+        }
+    }
+)

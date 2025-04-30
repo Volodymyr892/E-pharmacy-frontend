@@ -1,24 +1,23 @@
-// import image from "../../assets/imageClean.jpg"
+import { NavLink } from "react-router-dom"
 import css from "./MedicineItem.module.css"
-export default function MedicineItem() {
+
+export default function MedicineItem({prod}) {
     return(
         <div>
-            <div className={css.imageContainer}>
-                <img src="" alt="" />
-            </div>
+                <img className={css.img} src={prod.photo} alt="" />
             <div className={css.addContainer}>
                 <ul className={css.list}>
                     <li>
-                        <h3 className={css.title}>Antimonium</h3>
-                        <p className={css.description}>Structural (Fabrication)</p>
+                        <h3 className={css.title}>{prod.name}</h3>
+                        <p className={css.description}>{prod.suppliers}</p>
                     </li>
-                    <li><p className={css.price}>৳24</p></li>
+                    <li><p className={css.price}>{prod.price}</p></li>
                 </ul>
                 <div className={css.containerButton}>
                     <button className={css.button}>
                         Add to cart
                     </button>
-                    <p className={css.details}>Details</p>
+                    <NavLink className={css.details} to={`/product/${prod._id}`}>Details</NavLink>
                 </div>
             </div>
         </div>
