@@ -33,7 +33,7 @@ const productsSlice = createSlice({
         .addCase(productsId.fulfilled, (state, action)=>{ 
             state.isLoading = false;
             state.product = action.payload.data;
-            console.log("🚀 ~ .addCase ~  state.product:",  state.product)
+            // console.log("🚀 ~ .addCase ~  state.product:",  state.product)
         })
     }
 })

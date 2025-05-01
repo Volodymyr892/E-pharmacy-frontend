@@ -1,6 +1,7 @@
 import css from "./ReviewsItemProduct.module.css"
 import star from "../../../public/star.svg"
-export default function ReviewsItemProduct() {
+export default function ReviewsItemProduct({review}) {
+    console.log("🚀 ~ ReviewsItemProduct ~ review:", review)
     return(
         <div className={css.container}>
             <ul className={css.list}>  
@@ -9,7 +10,7 @@ export default function ReviewsItemProduct() {
                         <img src="" alt="" />
                     </li>
                     <li className={css.itemName}>
-                        <p className={css.name}>Leroy Jenkins</p>
+                        <p className={css.name}>{review.user}</p>
                         <p className={css.time}> 2 days ago</p>
                     </li>
                 </div>

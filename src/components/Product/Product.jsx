@@ -8,6 +8,7 @@ import { productSelectors } from "../../redux/products/selectors";
 
 export default function Product() {
     const product = useSelector(productSelectors);
+    console.log("🚀 ~ Product ~ product:", product)
     const { id } = useParams();
     const dispatch = useDispatch();
   
@@ -24,11 +25,11 @@ export default function Product() {
             <div className={css.containerAdd}>
                 <ul className={css.list}>
                     <li className={css.item}>
-                        <h3 className={css.title}>Moringa</h3>
-                        <p className={css.description}>Brand: Roofing (Asphalt)</p>
+                        <h3 className={css.title}>{product.name}</h3>
+                        <p className={css.description}>{product.suppliers}</p>
                     </li>
                     <li className={css.item}>
-                        <p className={css.price}>৳470</p>
+                        <p className={css.price}> $ {product.price}</p>
                     </li>
                 </ul>
             <div className={css.containerButton}>

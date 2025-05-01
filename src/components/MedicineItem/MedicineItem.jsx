@@ -11,7 +11,7 @@ export default function MedicineItem({prod}) {
                         <h3 className={css.title}>{prod.name}</h3>
                         <p className={css.description}>{prod.suppliers}</p>
                     </li>
-                    <li><p className={css.price}>{prod.price}</p></li>
+                    <li><p className={css.price}> $ {prod.price}</p></li>
                 </ul>
                 <div className={css.containerButton}>
                     <button className={css.button}>
