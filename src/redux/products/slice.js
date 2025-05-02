@@ -20,7 +20,6 @@ const productsSlice = createSlice({
         .addCase(fetchProducts.fulfilled, (state, action)=>{
             state.isLoading = false;
             state.products = action.payload.data.data; 
-            // console.log("🚀 ~ .addCase ~  state.products:",  state.products)
         })
         .addCase(fetchProducts.rejected, (state, action) => {
             state.isLoading = false;
@@ -33,7 +32,6 @@ const productsSlice = createSlice({
         .addCase(productsId.fulfilled, (state, action)=>{ 
             state.isLoading = false;
             state.product = action.payload.data;
-            // console.log("🚀 ~ .addCase ~  state.product:",  state.product)
         })
     }
 })

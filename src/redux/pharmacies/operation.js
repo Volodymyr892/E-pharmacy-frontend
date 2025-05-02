@@ -16,3 +16,28 @@ export const storesNearest = createAsyncThunk(
         }
     }
 )
+
+export const medicineStore = createAsyncThunk(
+    "stores/medicaneStores",
+    async(_,thunkApi)=>{
+        try {
+            const response = await axios.get("api/stores");
+            console.log("🚀 ~ async ~ response:", response)
+            return response.data;
+        } catch (error) {
+            return thunkApi.rejectWithValue(error.message);
+        }
+    }
+)
+export const customerReviews =createAsyncThunk(
+    "store/customerReviews",
+    async(_,thunkApi)=>{
+        try {
+            const response = await axios.get("api/customer-reviews");
+            console.log("🚀 ~ async ~ response.data:", response.data)
+            return response.data;
+        } catch (error) {
+            return thunkApi.rejectWithValue(error.message);
+        }
+    }
+)
