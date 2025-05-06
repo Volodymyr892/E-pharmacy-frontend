@@ -8,4 +8,4 @@ export default function ReviewsItem({review}) {
             <p className={css.reviews}>{review.testimonial}</p>
         </div>
     )
-}
+} 
