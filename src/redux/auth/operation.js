@@ -19,6 +19,8 @@ export const register = createAsyncThunk(
     async(_, thunkApi)=>{
         try {
             const response = await axios.post("");
+            setAuthHeaderToken(response.data.accessToken);
+            localStorage.setItem("accessToken", response.data.token);
             return response.data;
         } catch (error) {
             return thunkApi.rejectWithValue(error.message);
