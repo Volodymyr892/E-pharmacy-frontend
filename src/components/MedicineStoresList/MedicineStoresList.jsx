@@ -7,8 +7,6 @@ import { storesNearestSelectors } from "../../redux/pharmacies/selectors";
 
 export default function MedicineStoresList() {
     const stores = useSelector(storesNearestSelectors);
-    console.log("🚀 ~ MedicineStoresList ~ stores:", stores)
-    // console.log("🚀 ~ MedicineStoresList ~ stores:", stores)
     const dispatch = useDispatch();
 
     useEffect(()=>{

@@ -7,7 +7,7 @@ import { reviewsSelectors } from "../../redux/pharmacies/selectors";
 
 export default function ReviewsList() {
     const reviews = useSelector(reviewsSelectors);
-    console.log("🚀 ~ ReviewsList ~ reviews:", reviews)
+    // console.log("🚀 ~ ReviewsList ~ reviews:", reviews)
     const dispatch = useDispatch();
 
     useEffect(()=>{

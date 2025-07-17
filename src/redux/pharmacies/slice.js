@@ -34,7 +34,7 @@ const storesSlice = createSlice({
         .addCase(medicineStore.fulfilled, (state, action)=>{
             state.isLoading = false;
             state.stores.items = action.payload.data;
-            console.log("🚀 ~ .addCase ~ state.stores.items:", state.stores.items)
+            // console.log("🚀 ~ .addCase ~ state.stores.items:", state.stores.items)
         })
         .addCase(medicineStore.rejected, (state, action) => {
             state.isLoading = false;
@@ -48,7 +48,7 @@ const storesSlice = createSlice({
         .addCase(customerReviews.fulfilled, (state, action)=>{
             state.isLoading = false;
             state.stores.reviews = action.payload.data;
-            console.log("🚀 ~ .addCase ~ state.stores.reviews :", state.stores.reviews )
+            // console.log("🚀 ~ .addCase ~ state.stores.reviews :", state.stores.reviews )
         })
     }
 })

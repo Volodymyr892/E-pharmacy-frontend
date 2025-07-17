@@ -14,3 +14,10 @@
     top: 50px;
     right: 40px;
 }
+
+@media screen and (min-width: 768px){
+    .container{
+    /* margin: 0 auto; */
+    max-width: 768px;
+}
+}
